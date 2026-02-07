@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
     name: "ObjectiveKit",
     products: [
-        .library(name: "ObjectiveKit", targets: ["ObjectiveKit"]),
-        .library(name: "_ObjectiveKit", targets: ["_ObjectiveKit"]),
+        .library(name: "ObjectiveKit", targets: ["ObjectiveKit", "_ObjectiveKit"]),
     ],
     targets: [
         .target(
