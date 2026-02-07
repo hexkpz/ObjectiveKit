@@ -6,16 +6,17 @@ import PackageDescription
 let package = Package(
     name: "ObjectiveKit",
     products: [
-        .library(name: "ObjectiveKit", targets: ["ObjectiveKit", "_ObjectiveKit"]),
+        .library(name: "ObjectiveKit", targets: ["ObjectiveKit"]),
+        .library(name: "_ObjectiveKit", targets: ["_ObjectiveKit"]),
     ],
     targets: [
         .target(
             name: "ObjectiveKit",
-            dependencies: ["_ObjectiveKit"],
             path: "Sources/ObjectiveKit"
         ),
         .target(
             name: "_ObjectiveKit",
+            dependencies: ["ObjectiveKit"],
             path: "Sources/_ObjectiveKit"
         ),
     ]

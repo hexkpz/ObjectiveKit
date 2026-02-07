@@ -2,7 +2,7 @@
 //  Created by Anton Spivak
 //
 
-import _ObjectiveKit
+@_exported import ObjectiveKit
 
 public extension NSObject {
     var isKindOfSystemClass: Bool { oc_isKindOfSystemClass() }
