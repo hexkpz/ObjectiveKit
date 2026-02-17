@@ -153,33 +153,6 @@ OCSwizzleInstanceMethodOfClass(
 )
 ```
 
-## API Reference
-
-### Swift API (`_ObjectiveKit`)
-
-| API | Description |
-|-----|-------------|
-| `withExceptionHandler(_:) throws` | Executes a closure inside `@try`/`@catch`, re-throwing exceptions as Swift errors |
-| `NSObject.isKindOfSystemClass: Bool` | Whether the receiver's class name starts with `_` |
-| `NSException.asError: Error` | Converts an Objective-C exception to a Swift error |
-
-### Objective-C API (`ObjectiveKit`)
-
-| API | Description |
-|-----|-------------|
-| `OCExceptionHandler` | Class that bridges `@try`/`@catch` to Swift error handling |
-| `NSException.oc_error` | Converts an exception to `NSError` with full debug info |
-| `NSException.oc_raiseExceptionWithName:reason:userInfo:` | Convenience method to raise an exception |
-| `NSObject.oc_isKindOfSystemClass` | Whether the class name starts with `_` |
-| `OCSwizzleInstanceMethodOfClass()` | Swizzle two instance methods within one class |
-| `OCSwizzleInstanceMethodOfClasses()` | Swizzle instance methods across two classes |
-| `OCSwizzleMethodOfClass()` | Swizzle two class methods within one class |
-| `OCSwizzleMethodOfClasses()` | Swizzle class methods across two classes |
-| `OCReversedStringWithParts()` | Build a string from nil-terminated parts in reverse order |
-| `OCReversedStringWithPartsArray()` | Build a string from an array of parts in reverse order |
-| `OCSelectorFromReversedStringParts()` | Build a selector from reversed string parts |
-| `OCClassFromReversedStringParts()` | Look up a class from reversed string parts |
-
 ## Contact
 
 hexkpz@gmail.com
