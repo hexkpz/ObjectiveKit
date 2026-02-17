@@ -4,9 +4,7 @@
 
 #import "NSObject+OC.h"
 
-@import ObjectiveC.runtime;
-
-@implementation NSObject (SUI)
+@implementation NSObject (OC)
 
 - (BOOL)oc_isKindOfSystemClass {
     return [NSStringFromClass([self class]) hasPrefix:@"_"];

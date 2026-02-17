@@ -6,9 +6,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (SUI)
+@interface NSObject (OC)
 
-/// Returns `YES` if class name starts with `_`
+/// Returns `YES` if the receiver's class name starts with an underscore (`_`),
+/// which is a common convention for private/system framework classes.
 - (BOOL)oc_isKindOfSystemClass;
 
 @end

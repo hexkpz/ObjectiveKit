@@ -12,8 +12,8 @@
         body();
     } @catch (NSException *exception) {
         if (error != NULL) {
-            *error = [NSError errorWithDomain:OCExceptionErrorDomain code:0 userInfo:@{}];
-            if (exception != nil) *error = [exception oc_error];
+            // Convert the caught Objective-C exception into an NSError.
+            *error = [exception oc_error];
         }
     } @finally {}
 }
